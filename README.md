@@ -1,5 +1,5 @@
 # kubectl-buildstep
-This kubectl image is built on top of the [Cloud Build](https://cloud.google.com/cloud-build/)'s official gcr.io/cloud-builders/kubectl image.
+This kubectl image is built on top of the [Cloud Build](https://cloud.google.com/cloud-build/)'s official [gcr.io/cloud-builders/kubectl](https://github.com/GoogleCloudPlatform/cloud-builders/tree/master/kubectl) image.
 The only difference is that the entrypoint bash script does not try to get context from env variables and does not run `gcloud container clusters get-credentials`.
 This allows the user to pass in a kubeconfig as credentials without setting the context.
 
